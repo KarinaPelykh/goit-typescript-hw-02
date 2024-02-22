@@ -7,7 +7,10 @@ type Page = {
   likes: number;
   accounts: string[];
   status: "open" | "close";
-  details?: {};
+  details?: {
+    createAt: number;
+    updateAt: number;
+  };
 };
 
 const page1 = {
